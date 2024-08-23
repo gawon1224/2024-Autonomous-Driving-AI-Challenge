@@ -1,7 +1,16 @@
 # **Data Preprocessing**
 
 ## 0. EDA
-
+### Image Visualization
+![Image Visualization](./pngs/image_visualization.png)
+### Mask Visualization
+![Mask Visualization](./pngs/mask_visualization.png)
+### Number of Segmenations per Categories in Training set
+![Number of Segmenations per Categories in Training set](./pngs/per_category_num_of_segments_train.png)
+### Number of Segmenations per Image in Training set
+![Number of Segmenations per Images in Training set](./pngs/per_image_num_of_segments_train.png)
+### Area of Segmenations per Categories in Training set
+![Area of Segmenations per Categories in Training set](./pngs/per_category_area_of_segments_train.png)
 ## 1. Transform `json` files to `png` files
 
 Dataset's label files consist of `json` polygon coordinates.
