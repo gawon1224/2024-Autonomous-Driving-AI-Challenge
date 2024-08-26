@@ -29,10 +29,6 @@ model = dict(
     auxiliary_head=dict(num_classes=24, in_channels=448),
     test_cfg=dict(mode='whole')
 )
-
-# 학습 시작 지점 추가
-# resume_from = 'work_dirs/upernet_internimage_b_512x1024_320k_cityscapes2kroad_augmented/latest.pth'	# 이 지점부터 학습 재개
-
 optimizer = dict(
     _delete_=True, type='AdamW', lr=0.00006, betas=(0.9, 0.999), weight_decay=0.05,
     constructor='CustomLayerDecayOptimizerConstructor',
