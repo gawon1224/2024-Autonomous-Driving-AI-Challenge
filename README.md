@@ -13,13 +13,15 @@ Project Wrap Up Report :
 2. [Model Selection](#Model-Selection)
 3. [Result](#Result)
 
-Challenges
-객체 간 우선순위를 고려하여 road scene에서의 2D semantic segmentation 진행
+**Challenges**
 
-Solution
-Image 전처리 단계에서 우선순위 고려
-Data Augmentation을 통한 Class Imbalance 문제 해소
-유사한 dataset의 SOTA 모델 활용
+- 객체 간 우선순위를 고려하여 road scene에서의 2D semantic segmentation 진행
+
+**Solution**
+
+- Image 전처리 단계에서 우선순위 고려
+- Data Augmentation을 통한 Class Imbalance 문제 해소
+- 유사한 dataset의 SOTA 모델 활용
 
 
 ## Dataset

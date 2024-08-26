@@ -11,8 +11,8 @@ Our segmentation code is developed on top of [MMSegmentation v0.27.0](https://gi
 - Clone this repo:
 
 ```bash
-git clone https://github.com/Born-To-Be-Autonomous/KRoad_InternImage_segmentation.git
-cd KRoad_InternImage_segmentation/segmentation
+git clone https://github.com/gawon1224/2024-Autonomous-Driving-AI-Challenge.git
+cd 2024-Autonomous-Driving-AI-Challenge/segmentation
 ```
 
 - Create a conda virtual environment and activate it:
@@ -60,7 +60,7 @@ python test.py
 - You can also install the operator using .whl files
 [DCNv3-1.0-whl](https://github.com/OpenGVLab/InternImage/releases/tag/whl_files)
 
-- Lastly, you should edit `/home/../anaconda3/envs/kroad/lib/python3.7/site-packages/mmcv/utils/config.py`, line 502
+- Lastly, if you use **PYTHON=3.8**, you should edit `/home/../anaconda3/envs/kroad/lib/python3.8/site-packages/mmcv/utils/config.py`, line 502
 	You should delete `verify=True` in `text, _ = FormatCode(text, style_config=yapf_style, verify=True)`
 
 ### Data Preparation
@@ -75,7 +75,7 @@ To evaluate our `InternImage` on validation dataset, run:
 ```bash
 ./dist_test.sh <config-file> <checkpoint> <gpu-num> --eval mIoU
 ```
-You can download checkpoint files from [here](https://huggingface.co/OpenGVLab/InternImage/tree/fc1e4e7e01c3e7a39a3875bdebb6577a7256ff91). Then place it to segmentation/checkpoint_dir/seg.
+You can download our checkpoint file from [here](https://drive.google.com/file/d/1GvMmIy9DAF6dWNmtfTtmw4DkeTvOmuWn/view?usp=sharing). Then place it to `segmentation/checkpoint_dir/`.
 
 For example, to evaluate the `InternImage-B` with a single GPU:
 
@@ -103,6 +103,8 @@ For example, to train `InternImage-B` with 8 GPU on 1 node (total batch size 16)
 ./dist_train.sh configs/kroad/upernet_internimage_b_512x1024_320k_city2kroad.py 8
 ```
 - If you resume learning from a specific point, add `resume_from = 'checkpoint_path.pth'` in a config file.
+- You can download checkpoint files what you need from [here](https://huggingface.co/OpenGVLab/InternImage/tree/fc1e4e7e01c3e7a39a3875bdebb6577a7256ff91). Then place it to `segmentation/checkpoint_dir/`. And you should add `load_from` in config files. 
+	- If you don't do this, you can't use a model pretrained with **CITYSCAPES**, just pretrained with **IMAGENET**.
 ### Manage Jobs with Slurm
 
 For example, to train `InternImage-B` with 8 GPU on 1 node (total batch size 16), run:
