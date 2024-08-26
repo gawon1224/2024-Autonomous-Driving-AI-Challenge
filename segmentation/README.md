@@ -102,7 +102,7 @@ For example, to train `InternImage-B` with 8 GPU on 1 node (total batch size 16)
 ```bash
 ./dist_train.sh configs/kroad/upernet_internimage_b_512x1024_320k_city2kroad.py 8
 ```
-
+- If you resume learning from a specific point, add `resume_from = 'checkpoint_path.pth'` in a config file.
 ### Manage Jobs with Slurm
 
 For example, to train `InternImage-B` with 8 GPU on 1 node (total batch size 16), run:
