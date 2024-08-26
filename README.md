@@ -35,6 +35,8 @@ Project Wrap Up Report :
 ## Data Preprocessing
 https://github.com/gawon1224/2024-Autonomous-Driving-AI-Challenge/tree/main/Data-Preprocessing
 ## Model Selection
+**[InternImage](https://github.com/OpenGVLab/InternImage)**
+
 ![image](https://github.com/user-attachments/assets/8aea3393-913c-416f-8035-bd84040c9f4f)
 src: 
 
