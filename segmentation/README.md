@@ -103,7 +103,7 @@ For example, to train `InternImage-B` with 8 GPU on 1 node (total batch size 16)
 ./dist_train.sh configs/kroad/upernet_internimage_b_512x1024_320k_city2kroad.py 8
 ```
 - If you resume learning from a specific point, add `resume_from = 'checkpoint_path.pth'` in a config file.
-- You can download checkpoint files what you need from [here](https://huggingface.co/OpenGVLab/InternImage/tree/fc1e4e7e01c3e7a39a3875bdebb6577a7256ff91). Then place it to `segmentation/checkpoint_dir/`. And you should add `load_from` in config files. 
+- You can download checkpoint files what you need from [here](https://huggingface.co/OpenGVLab/InternImage/tree/fc1e4e7e01c3e7a39a3875bdebb6577a7256ff91). Then place it to `segmentation/checkpoint_dir/` and add `load_from='checkpoing_path.pth'` in config files. 
 	- If you don't do this, you can't use a model pretrained with **CITYSCAPES**, just pretrained with **IMAGENET**.
 ### Manage Jobs with Slurm
 
