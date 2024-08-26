@@ -33,10 +33,11 @@ Data Augmentation을 통한 Class Imbalance 문제 해소
 https://github.com/gawon1224/2024-Autonomous-Driving-AI-Challenge/tree/main/Data-Preprocessing
 ## Model Selection
 ![image](https://github.com/user-attachments/assets/8aea3393-913c-416f-8035-bd84040c9f4f)
+src: 
 
 
 ## Result
-### UperNet+InternImage
+### UperNet + InternImage
 Pretrained with Cityscapes(fine)
 |Backbone|Batchsize|Iter|mIoU(val)|mIoU(test)|Inference time(test)|# params|
 |-----|-----|-----|---|---|---|---|
@@ -45,11 +46,19 @@ Pretrained with Cityscapes(fine)
 |S(Small)|8|80k|77.01|77.08|113s|80M|
 |B(Base)|8|80k|79.17|80.68|125s|128M|
 |B(Base)|12|80k|79.15|81.66|151s|128M|
-### UperNet+InternImage(Pretrained with additional data)
+### UperNet + InternImage(Pretrained with additional data)
 Pretrained with Mapillary 80k + Cityscapes(coarse) 160k
-|Backbone|Batchsize|Iter|mIoU(val)|mIoU(test)|Inference time(test)|# params|Train speed|
-|-----|-----|-----|---|---|---|---|---|
-|L(Large)|8|36k|73.17|74.74|149s|256M|0.78s/iter|
+|Backbone|Batchsize|Iter|mIoU(val)|mIoU(test)|Inference time(test)|# params|
+|-----|-----|-----|---|---|---|---|
+|L(Large)|8|36k|73.17|74.74|149s|256M|
+### UperNet + InternImage with Augmented data
+Pretrained with Cityscapes(fine)
+
+We augmented motorcycle and personal mobility classes by cropping images to 960x600 and resize images to 1920x1200.
+|Backbone|Batchsize|Iter|mIoU(val)|mIoU(test)|Inference time(test)|# params|
+|-----|-----|-----|---|---|---|---|
+|S(Small)|8|36k|80.78|80.09|113s|80M|
+|B(Base)|12|160k|79.78|80.19|122s|128M|
 
 ## Reference
 * https://github.com/OpenGVLab/InternImage

@@ -11,6 +11,8 @@
 ![Number of Segmenations per Images in Training set](../pngs/per_image_num_of_segments_train.png)
 ### Area of Segmenations per Categories in Training set
 ![Area of Segmenations per Categories in Training set](../pngs/per_category_area_of_segments_train.png)
+
+### There are some **IMBALANCE** in data!
 ## 1. Transform `json` files to `png` files
 
 Dataset's label files consist of `json` polygon coordinates.
