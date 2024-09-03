@@ -60,8 +60,8 @@ python test.py
 - You can also install the operator using .whl files
 [DCNv3-1.0-whl](https://github.com/OpenGVLab/InternImage/releases/tag/whl_files)
 
-- Lastly, if you use **PYTHON=3.8**, you should edit `/home/../anaconda3/envs/kroad/lib/python3.8/site-packages/mmcv/utils/config.py`, line 502
-	You should delete `verify=True` in `text, _ = FormatCode(text, style_config=yapf_style, verify=True)`
+- Lastly, you should edit `/home/../anaconda3/envs/kroad/lib/python3.8/site-packages/mmcv/utils/config.py`, line 502
+	Delete `verify=True` in `text, _ = FormatCode(text, style_config=yapf_style, verify=True)`
 
 ### Data Preparation
 
