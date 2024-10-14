@@ -6,6 +6,8 @@ Project Period : 2024년 7월 26일 ~ 2024년 8월 19일
 
 Project Wrap Up Report : [click here](https://github.com/gawon1224/2024-Autonomous-Driving-AI-Challenge/blob/main/%5B%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89%20AI%20%EC%B1%8C%EB%A6%B0%EC%A7%80%5D%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%84%A4%EB%AA%85%EC%84%9C_%ED%83%9C%EC%96%B4%EB%82%9C%20%EA%B9%80%EC%97%90%20%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89%ED%8C%80.pdf)
 
+How to Use Our Model? : [click here](https://github.com/gawon1224/2024-Autonomous-Driving-AI-Challenge/blob/main/segmentation/README.md)
+
 [![KRoad AI competition](/pngs/banner.jpg)](https://challenge.gcontest.co.kr/template/m/16335)
 
 ## Content
